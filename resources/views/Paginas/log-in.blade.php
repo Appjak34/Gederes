@@ -25,21 +25,7 @@
     <!-- Main container -->
     <div class="page-container">
         <!-- bloc-0 -->
-        <div class="bloc sticky-nav full-width-bloc bgc-white l-bloc" id="bloc-0">
-            <div class="container">
-                <nav class="navbar nav-center row mini-nav">
-                    <div class="navbar-header"><a class="navbar-brand" href="index.html"><span class="special-tag-for-editing-text-with-html"></span><span class="special-tag-for-editing-text-with-html"></span><img src="img/Sin%20título-1.svg" alt="logo" height="130" width="275" /></a><button id="nav-toggle" type="button" class="ui-navbar-toggle navbar-toggle menu-icon-rounded-bars" data-toggle="collapse" data-target=".navbar-1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button></div>
-                    <div class="collapse navbar-collapse navbar-1 nav-special fullscreen-nav">
-                        <ul class="site-navigation nav navbar-nav">
-                            <li><a href="index.html" class="ltc-white">Home</a></li>
-                            <li><a href="menu.html">Menu</a></li>
-                            <li><a href="log-in.html" class="ltc-white">Log In</a></li>
-                            <li></li>
-                        </ul>
-                    </div>
-                </nav>
-            </div>
-        </div>
+            @include ('templates/navbar')
         <!-- bloc-0 END -->
         <!-- bloc-3 -->
         <div class="bloc bgc-white l-bloc" id="bloc-3">

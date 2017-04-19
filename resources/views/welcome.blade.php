@@ -21,25 +21,8 @@
 </head>
 
 <body>
-    <!-- Main container -->
     <div class="page-container">
-        <!-- bloc-0 -->
-        <div class="bloc sticky-nav full-width-bloc bgc-white l-bloc" id="bloc-0">
-            <div class="container">
-                <nav class="navbar nav-center row mini-nav">
-                    <div class="navbar-header"><a class="navbar-brand" href="index.html"><span class="special-tag-for-editing-text-with-html"></span><span class="special-tag-for-editing-text-with-html"></span><img src="img/Sin%20título-1.svg" alt="logo" height="130" width="275" /></a><button id="nav-toggle" type="button" class="ui-navbar-toggle navbar-toggle menu-icon-rounded-bars" data-toggle="collapse" data-target=".navbar-1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button></div>
-                    <div class="collapse navbar-collapse navbar-1 nav-special fullscreen-nav">
-                        <ul class="site-navigation nav navbar-nav">
-                            <li><a href="index.html" class="ltc-white">Home</a></li>
-                            <li><a href="menu.html">Menu</a></li>
-                            <li><a href="log-in.html" class="ltc-white">Log In</a></li>
-                            <li></li>
-                        </ul>
-                    </div>
-                </nav>
-            </div>
-        </div>
-        <!-- bloc-0 END -->
+        @include ('templates/navbar')
         <!-- bloc-1 -->
         <div class="bloc bg-Fondo b-parallax bgc-white l-bloc bloc-fill-screen" id="bloc-1">
             <div class="container">
@@ -109,7 +92,7 @@
                         <p class="mg-lg">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
                     </div>
                     <div class="col-sm-6">
-                        <div class="center-block blocsapp-device blocsapp-device-iphone6 iphone6-space-grey"><img src="img/Sin%20título%202.png" width="1" height="12" /></div>
+                        <div class="center-block blocsapp-device blocsapp-device-iphone6 iphone6-space-grey"><img src="img/img2.png" width="1" height="12" /></div>
                     </div>
                 </div>
             </div>
@@ -155,10 +138,11 @@
                     <div class="col-sm-4">
                         <h3 class="blocs-team-header">Esteban</h3>
                         <p class="blocs-team-details">Lorem ipsum dolor sit amet, adipiscing elit Aenean commodo ligula eget.</p><br><a href="index.html" target="_blank"><span class="fa fa-twitter icon-sm pull-left blocs-team-first-social"></span></a><a href="index.html" target="_blank"><span class="fa fa-facebook icon-sm pull-left"></span></a><a href="index.html" target="_blank"><span class="fa fa-dribbble icon-sm pull-left"></span></a></div>
-                    <div class="col-sm-2"><img src="img/placeholder-user.png" class="img-responsive img-circle center-block blocs-team-avatar" /></div>
+                    <!-- <div class="col-sm-2"><img src="img/placeholder-user.png" class="img-responsive img-circle center-block blocs-team-avatar" /></div>
                     <div class="col-sm-4">
                         <h3 class="blocs-team-header">Polet</h3>
                         <p class="blocs-team-details">Lorem ipsum dolor sit amet, adipiscing elit Aenean commodo ligula eget.</p><br><a href="index.html" target="_blank"><span class="fa fa-twitter icon-sm pull-left blocs-team-first-social"></span></a><a href="index.html" target="_blank"><span class="fa fa-facebook icon-sm pull-left"></span></a><a href="index.html" target="_blank"><span class="fa fa-dribbble icon-sm pull-left"></span></a></div>
+                    -->
                 </div>
             </div>
         </div>
@@ -168,7 +152,7 @@
             <div class="container bloc-md">
                 <div class="row">
                     <div class="col-sm-12 text-center">
-                        <a href="index.html"><img src="img/Sin%20título-1.svg" class="center-block mg-sm" height="94" width="232" /></a>
+                        <a href="index.html"><img src="{{asset('img/logo.svg')}}" class="center-block mg-sm" height="94" width="232" /></a>
                         <p class="text-center">Copirigth <br></p>
                     </div>
                 </div>
