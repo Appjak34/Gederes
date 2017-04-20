@@ -26,3 +26,7 @@ Route::get('/menu',function(){
 Route::get('/log-ing',function(){
 	return view('Paginas/log-in');
 })->name('log-in');
+
+Route::get('/Chef',function(){
+	return view('Paginas/Chef');
+})->name('Chef');

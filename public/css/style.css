@@ -924,6 +924,10 @@ a {
     background-image: url(../img/barranegra.png);
 }
 
+.bg-barranaranja {
+    background-image: url(../img/barranaranja.png);
+}
+
 .bg-Restaurant-2014 {
     background-image: url(../img/Restaurant%2014.jpeg);
 }
@@ -931,7 +935,6 @@ a {
 .bg-Fondo {
     background-image: url(../img/Fondo.jpg);
 }
-
 
 .bg-barranegra2 {
     background-image: url(../img/barranegra2.png);
