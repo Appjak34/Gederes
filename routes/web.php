@@ -14,15 +14,6 @@
 Route::get('/', function () {
     return view('welcome');
 });
-
-Route::get('/welcome',function(){
-	return view('welcome');
-})->name('welcome');
-
-Route::get('/menu',function(){
-	return view('Paginas/menu');
-})->name('menu');
-
-Route::get('/log-ing',function(){
-	return view('Paginas/log-in');
-})->name('log-in');
+Route::get('/welcome','navbarController@welcome')->name('welcome');
+Route::get('/menu','navbarController@menu')->name('menu');
+Route::get('/log-in','navbarController@login')->name('log-in');
