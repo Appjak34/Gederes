@@ -16,6 +16,7 @@ class Orden extends Migration
         Schema::create('orden', function(Blueprint $table){
             $table->increments('id_orden');
             $table->dateTime('fecha');
+            $table->string('comentarios');
             $table->integer('cliente')->unsigned();
             $table->foreign('cliente')->references('id_usuario')->on('usuarios')->OnDelete('cascade');
         });
