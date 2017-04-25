@@ -16,7 +16,10 @@ class Platillo extends Migration
         Schema::Create('platillo', function(Blueprint $tabla){
             $tabla->increments('id_platillo');
             $tabla->string('nombrePlatillo');
+            $tabla->string('descripcion');
+            $tabla->string('tipo');
             $tabla->decimal('precio',5,2);
+            $tabla->string('imagen');
         });
     }
 

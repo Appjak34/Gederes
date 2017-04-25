@@ -13,8 +13,7 @@ class navbarController extends Controller
     public function login(){
     	return view('Paginas/log-in');
     }
-
-	public function menu(){
-    	return view('Paginas/menu');
+    public function chef(){
+    	return view('Paginas/Chef');
     }
 }
