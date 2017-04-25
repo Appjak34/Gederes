@@ -9,9 +9,10 @@
                     <div class="collapse navbar-collapse navbar-1 nav-special fullscreen-nav">
                         <ul class="site-navigation nav navbar-nav">
                             <li><a href="{{route('welcome')}}" class="ltc-white">Home</a></li>
-                            <li><a href="{{route('menu')}}">Menu</a></li>
+                            <li><a href="{{route('menu')}}" method="get">Menu</a></li>
                             <li><a href="{{route('Chef')}}">Chef</a></li>
                             <li><a href="{{route('log-in')}}" class="ltc-white">Log In</a></li>
+                            <li><a href="{{route('almacen')}}" class="ltc-white"> Almacen </a></li>
                             <li></li>
                         </ul>
                     </div>
