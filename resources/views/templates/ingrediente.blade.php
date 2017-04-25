@@ -3,6 +3,6 @@
 	<tr>
 	    <td> {{$ingrediente->nombreIngrediente}} </td>
 	    <td> {{$ingrediente->cantidad}} </td>
-	    <td width="150"><input type='text' name='cantidad' id='cantidad'> </td>
+	    <td width="150"><input type='text' name='cantidad' id='cantidad' value=0> </td>
 	<tr>
 @endforeach
