@@ -14,32 +14,36 @@
     <script src="./js/jquery-2.1.0.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>
     <script src="./js/blocs.min.js"></script>
-    <title>Chef</title>
+    <title>Almacen</title>
     <!-- Google Analytics -->
     <!-- Google Analytics END -->
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 5px;
+        }
+    </style>
 </head>
 
 <body>
     <!-- Main container -->
     <div class="page-container">
         @include ('templates/navbar')
-        <!-- bloc-11 -->
-        <div class="bloc bg-barranaranja bgc-white l-bloc" id="bloc-11">
-            <div class="container bloc-xl">
-                <div class="row">
-                    <div class="col-sm-12"></div>
-                </div>
-            </div>
-        </div>
-        <!-- bloc-11 END -->
         <!-- bloc-12 -->
-        
-            @include ('templates/orden', ['orden'=> $orden])
-
+        <form>
+            <table style="width:70%" align="center">
+                <tr>
+                    <th> Nombre </th>
+                    <th> Cantidad </th>
+                    <th> Agregar </th>
+                <tr>
+                @include ('templates/ingrediente', ['ingredientes'=>$ingredientes])
+            </table>
+        </form>
         <!-- bloc-12 END -->
-        <!-- bloc-13 -->
-        
-        <!-- bloc-13 END -->
         <!-- ScrollToTop Button --><a class="bloc-button btn btn-d scrollToTop" onclick="scrollToTarget('1')"><span class="fa fa-chevron-up"></span></a>
         <!-- ScrollToTop Button END-->
     </div>

@@ -15,18 +15,26 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/welcome',function(){
-	return view('welcome');
-})->name('welcome');
+Route::get('/welcome','navbarController@welcome')->name('welcome');
+Route::get('/menu','PlatilloCont@menu')->name('menu');
+Route::get('/log-in','navbarController@login')->name('log-in');
+//Route::get('/Chef','navbarController@chef')->name('Chef');
+Route::get('/Chef', 'ordenController@muestraordenes')->name('Chef');
+Route::get('/almacen','Ingredientes@almacen')->name('almacen');
+Route::get('/menu/agregarPlatillo','IngredientsOption@addoption')->name('agregarPlatillo');
 
-Route::get('/menu',function(){
-	return view('Paginas/menu');
-})->name('menu');
+Route::get('/insertarplatillo', function(){
+	return view('Paginas/insertaplatillo');
+})->name('insertarplatillo');
 
-Route::get('/log-ing',function(){
-	return view('Paginas/log-in');
-})->name('log-in');
+Route::get('/update', function(){
+	return view('Paginas/update');
+})->name('update');
 
-Route::get('/Chef',function(){
-	return view('Paginas/Chef');
-})->name('Chef');
+Route::get('/delete', function(){
+	return view('Paginas/delete');
+})->name('delete');
+
+Route::post('/insertado', 'platilloController@store')->name('insertado');
+Route::put('/actualizado', 'platilloController@update')->name('actualizado');
+Route::delete('/eliminado', 'platilloController@delete')->name('eliminado');

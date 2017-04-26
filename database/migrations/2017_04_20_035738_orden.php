@@ -17,8 +17,8 @@ class Orden extends Migration
             $table->increments('id_orden');
             $table->dateTime('fecha');
             $table->string('comentarios');
-            $table->integer('cliente')->unsigned();
-            $table->foreign('cliente')->references('id_usuario')->on('usuarios')->OnDelete('cascade');
+            $table->string('cliente', 100);
+            $table->foreign('cliente')->references('login')->on('usuarios')->OnDelete('cascade');
         });
     }
 

@@ -14,8 +14,8 @@ class Platillo extends Migration
     public function up()
     {
         Schema::Create('platillo', function(Blueprint $tabla){
-            $tabla->increments('id_platillo');
-            $tabla->string('nombrePlatillo');
+            $tabla->string('nombrePlatillo', 100);
+            $tabla->primary('nombrePlatillo');
             $tabla->string('descripcion');
             $tabla->string('tipo');
             $tabla->decimal('precio',5,2);

@@ -15,8 +15,8 @@ class Usuarios extends Migration
     {
         Schema::create('usuarios', function(Blueprint $tabla)
             {
-                $tabla->increments('id_usuario');
                 $tabla->string('login', 50);
+                $tabla->primary('login');
                 $tabla->string('clave', 50);
                 $tabla->string('rol', 50);
             });
