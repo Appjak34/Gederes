@@ -34,7 +34,7 @@
         <!-- bloc-11 END -->
         <!-- bloc-12 -->
         
-            @include ('templates/orden')
+            @include ('templates/orden', ['orden'=> $orden])
 
         <!-- bloc-12 END -->
         <!-- bloc-13 -->

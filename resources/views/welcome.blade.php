@@ -28,8 +28,8 @@
             <div class="container">
                 <div class="row principal">
                     <div class="col-sm-12">
-                        <h1 class="mg-md  tc-white animated vanishIn animSpeedLazy">Titulo Mamador 1</h1>
-                        <h3 class="mg-md  tc-white animDelay02 animated vanishIn animSpeedLazy">Titulo mamador 2<br></h3>
+                        <h1 class="mg-md  tc-white animated vanishIn animSpeedLazy">JERLAP Restaurant-Bar</h1>
+                        <h3 class="mg-md  tc-white animDelay02 animated vanishIn animSpeedLazy">Descubre el sabor<br></h3>
                     </div>
                 </div>
             </div>
@@ -60,11 +60,11 @@
             <div class="container bloc-sm">
                 <div class="row">
                     <div class="col-sm-6">
-                        <h1 class="mg-md text-center tc-dark-red animated puffIn">Titulo Mamon</h1>
+                        <h1 class="mg-md text-center tc-dark-red animated puffIn">Los mejores cortes</h1>
                         <h2 class="mg-md text-center">***</h2>
-                        <p class="animated pulse">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+                        <p class="animated pulse">A la parrilla, ahumado, al horno, disfruta de los mejores cortes de carne solo aquí, en JERLAP utilizamos carne fresca y de la mejor calidad para garantizar el mejor sabor y una experiencia inigualable.</p>
                     </div>
-                    <div class="col-sm-6"><img src="{{asset('img/highway.jpg')}}" class="img-responsive" /></div>
+                    <div class="col-sm-6"><img src="{{asset('img/carne.jpg')}}" class="img-responsive" /></div>
                 </div>
             </div>
         </div>
@@ -73,11 +73,11 @@
         <div class="bloc bgc-white l-bloc" id="bloc-13">
             <div class="container bloc-sm">
                 <div class="row">
-                    <div class="col-sm-6"><img src="img/citysky.jpg" class="img-responsive" /></div>
+                    <div class="col-sm-6"><img src="img/vino.jpg" class="img-responsive" /></div>
                     <div class="col-sm-6">
-                        <h1 class="mg-md text-center tc-dark-red animated puffIn">Titulo mamon 2<br></h1>
+                        <h1 class="mg-md text-center tc-dark-red animated puffIn">Tenemos las mejores acompañantes<br></h1>
                         <h2 class="mg-md text-center">***</h2>
-                        <p class="text-right animated pulse">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+                        <p class="text-right animated pulse">¿Necesitas acompañar tu comida? Nada mejor que uno de nuestros mejores vinos, en JERLAP tenemos una amplia gama de bebidas que te encantarán, disfruta desde un cóctel preparado hasta un agua de frutas para los niños.</p>
                     </div>
                 </div>
             </div>
@@ -89,7 +89,7 @@
                 <div class="row">
                     <div class="col-sm-6">
                         <h2 class="mg-lg device-bloc-text-vc tc-white">Pide la comida con tu celular</h2>
-                        <p class="mg-lg">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+                        <p class="mg-lg">En JERLAP estamos comprometidos con le medio ambiente, y le decimos adiós al papel con nuestro nuevo sistema de comandas electrónicas, solicita tu clave de acceso y podrás ordenar desde la comodidad de tu teléfono celular, además contamos con facturación electrónica por lo que podrás realizar el pago de tus alimentos sin intercambios molestos ni problemas con tu tarjeta.</p>
                     </div>
                     <div class="col-sm-6">
                         <div class="center-block blocsapp-device blocsapp-device-iphone6 iphone6-space-grey"><img src="img/img2.png" width="1" height="12" /></div>
@@ -136,7 +136,7 @@
                 <div class="row voffset-lg">
                     <div class="col-sm-2"><img src="img/placeholder-user.png" class="img-responsive img-circle center-block blocs-team-avatar" /></div>
                     <div class="col-sm-4">
-                        <h3 class="blocs-team-header">Esteban</h3>
+                        <h3 class="blocs-team-header">Esleban</h3>
                         <p class="blocs-team-details">Lorem ipsum dolor sit amet, adipiscing elit Aenean commodo ligula eget.</p><br><a href="index.html" target="_blank"><span class="fa fa-twitter icon-sm pull-left blocs-team-first-social"></span></a><a href="index.html" target="_blank"><span class="fa fa-facebook icon-sm pull-left"></span></a><a href="index.html" target="_blank"><span class="fa fa-dribbble icon-sm pull-left"></span></a></div>
                     <!-- <div class="col-sm-2"><img src="img/placeholder-user.png" class="img-responsive img-circle center-block blocs-team-avatar" /></div>
                     <div class="col-sm-4">

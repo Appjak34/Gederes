@@ -14,8 +14,8 @@ class Ingredientes extends Migration
     public function up()
     {
         Schema::Create('ingredientes', function(Blueprint $tabla){
-            $tabla->increments('id_ingrediente');
             $tabla->string('nombreIngrediente', 50);
+            $tabla->primary('nombreIngrediente');
             $tabla->integer('cantidad');
 
         });

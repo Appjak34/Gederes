@@ -15,10 +15,10 @@ class Detallesplato extends Migration
     {
         Schema::create('detallesplato', function(Blueprint $tabla){
             $tabla->increments('id_detalles');
-            $tabla->integer('platillo')->unsigned();
-            $tabla->foreign('platillo')->references('id_platillo')->on('platillo')->OnDelete('cascade');
-            $tabla->integer('ingredientes')->unsigned();
-            $tabla->foreign('ingredientes')->references('id_ingrediente')->on('ingredientes')->OnDelete('cascade');
+            $tabla->string('platillo',100);
+            $tabla->foreign('platillo')->references('nombrePlatillo')->on('platillo')->OnDelete('cascade');
+            $tabla->string('ingredientes', 100);
+            $tabla->foreign('ingredientes')->references('nombreIngrediente')->on('ingredientes')->OnDelete('cascade');
         });
     }
 

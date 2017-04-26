@@ -7,7 +7,8 @@ use Illuminate\Database\Eloquent\Model;
 class ingrediente extends Model
 {
     protected $table='ingredientes';
-    public $primaryKey = 'id_ingrediente';
+    public $primaryKey = 'nombreIngrediente';
+    public $incrementing = false;
     protected $fillable = ['nombreIngrediente', 'cantidad'];
     public $timestamps = false;
 }

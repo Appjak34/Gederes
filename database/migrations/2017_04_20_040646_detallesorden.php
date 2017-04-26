@@ -15,8 +15,10 @@ class Detallesorden extends Migration
     {
         Schema::create('detallesorden', function(Blueprint $tabla){
             $tabla->increments('id_detalles_orden');
-            $tabla->integer('platillo')->unsigned();
-            $tabla->foreign('platillo')->references('id_platillo')->on('platillo')->OnDelete('cascade');
+            $tabla->integer('id_orden')->unsigned();
+            $tabla->foreign('id_orden')->references('id_orden')->on('orden')->OnDelete('cascade');
+            $tabla->string('platillo', 100);
+            $tabla->foreign('platillo')->references('nombrePlatillo')->on('platillo')->OnDelete('cascade');
         });
     }
 

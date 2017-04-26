@@ -1,6 +1,8 @@
-@font-face{
-    font-family: 'Cyclo-Trial';
-    src: url("fonts/Cyclo_Trial.otf");
+@font-face {
+font-family: 'Cyclo Trial';
+font-style: normal;
+font-weight: normal;
+src: local('Cyclo Trial'), url('../fonts/Cyclo_Trial.woff') format('woff');
 }
 
 body {
@@ -245,7 +247,7 @@ button {
 }
 
 #bloc-6 h6 {
-    font-size: 32.222222328186035px;
+    font-size: 24.222222px;
 }
 
 #bloc-7 h6 {
@@ -775,7 +777,7 @@ p,
 label,
 .btn,
 a {
-    font-family: "Helvetica";
+    font-family: "Cyclo Trial";
 }
 
 .container {
@@ -1135,6 +1137,11 @@ a {
         width: 180px;
         height: 320px;
     }
+}
+
+.MenuTemplate img {
+    height: 166px!important;
+    width: 238px;
 }
 
 @media (max-width: 400px) {

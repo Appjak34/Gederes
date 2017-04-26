@@ -18,7 +18,8 @@ Route::get('/', function () {
 Route::get('/welcome','navbarController@welcome')->name('welcome');
 Route::get('/menu','PlatilloCont@menu')->name('menu');
 Route::get('/log-in','navbarController@login')->name('log-in');
-Route::get('/Chef','navbarController@chef')->name('Chef');
+//Route::get('/Chef','navbarController@chef')->name('Chef');
+Route::get('/Chef', 'ordenController@muestraordenes')->name('Chef');
 Route::get('/almacen','Ingredientes@almacen')->name('almacen');
 Route::get('/menu/agregarPlatillo','IngredientsOption@addoption')->name('agregarPlatillo');
 
