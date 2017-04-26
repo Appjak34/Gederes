@@ -19,7 +19,7 @@
     <script src="./js/blocs.min.js"></script>
     <script src="./js/jqBootstrapValidation.js"></script>
     <script src="./js/formHandler.js"></script>
-    <title>AgergarPlatillo</title>
+    <title>ActualizarPlatillo</title>
     <!-- Google Analytics -->
     <!-- Google Analytics END -->
 </head>
@@ -37,9 +37,13 @@
                                 <div class="col-sm-12">
                                     <div class="row">
                                         <div class="col-sm-6">
-                                            <form action="{{route('insertado')}}" method="post" id="form_18266" novalidate>
-                                            {{ csrf_field() }}                                                    
-                                                    <div class="form-group"><label>Nombre<br></label><input type="text" name="nombrePlatillo" class="form-control" id="nombrePlatillo" required /></div>
+                                            <form action="{{route('actualizado')}}" method="post" id="form_18266" novalidate>
+                                            {{ method_field('PUT') }}
+                                            {{ csrf_field() }}
+                                                    <div class="form-group">
+                                                        <label>Nombre del Platillo a modificar<br></label>
+                                                        @include('templates/showPlatillo', ['platillos'=>$platillos])
+                                                    </div>                                            
                                                     <div class="form-group"><label>Descripción<br></label><input type="text" name="descripcion" class="form-control" id="descripcion" required /></div>
                                                     <div class="form-group"><label>Precio</label><input type="text" name="precio" class="form-control " id="precio" required /></div>
                                                     <div class="form-group"><label>Imagen<br></label><input type="text" name="imagen" class="form-control" id="imagen" required /></div>
@@ -49,7 +53,7 @@
                                                              @include ('templates/ingredientOption', ['ingredientes'=>$ingredientes])
                                                     </div>
                                                     <div class="col-sm-12">
-                                                        <div class="text-center"><button type="submit" class="btn btn-wire btn-rd btn-xl wire-btn-light-salmon">Agregar</button></div>
+                                                        <div class="text-center"><button type="submit" class="btn btn-wire btn-rd btn-xl wire-btn-light-salmon">Actualizar</button></div>
                                                     </div>
                                             </form>
                                         </div>

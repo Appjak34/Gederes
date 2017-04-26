@@ -19,7 +19,7 @@
     <script src="./js/blocs.min.js"></script>
     <script src="./js/jqBootstrapValidation.js"></script>
     <script src="./js/formHandler.js"></script>
-    <title>AgergarPlatillo</title>
+    <title>ActualizarPlatillo</title>
     <!-- Google Analytics -->
     <!-- Google Analytics END -->
 </head>
@@ -27,8 +27,8 @@
 <body>
     <!-- Main container -->
     <div class="page-container">
-        <!-- bloc-14 -->
-        <div class="bloc bgc-white l-bloc " id="bloc-14">
+        <!-- bloc-15 -->
+        <div class="bloc bgc-white l-bloc" id="bloc-15">
             <div class="container bloc-md">
                 <div class="row">
                     <div class="col-sm-12">
@@ -37,22 +37,16 @@
                                 <div class="col-sm-12">
                                     <div class="row">
                                         <div class="col-sm-6">
-                                            <form id="form_18266" novalidate>
-                                                <div class="form-group"><label>Nombre<br></label><input class="form-control" id="input_227" /></div>
-                                                <div class="form-group"><label>Descripción<br></label><textarea class="form-control" rows="4" cols="50" id="textarea_20"></textarea></div>
+                                            <form action="{{route('eliminado')}}" method="post" id="form_18266" novalidate>
+                                            {{ method_field('DELETE') }}
+                                            {{ csrf_field() }}                                                    
+                                                    <div class="form-group">
+                                                        <label>Nombre del Platillo a eliminar<br></label>
+                                                        @include('templates/showPlatillo', ['platillos'=>$platillos])
+                                                    </div>                                            
+                                                        <div class="text-center"><button type="submit" class="btn btn-wire btn-rd btn-xl wire-btn-light-salmon">Eliminar</button></div>
+                                                    </div>
                                             </form>
-                                        </div>
-                                        <div class="col-sm-6"><img src="img/add_image.png" height="284" width="478" />
-                                            <div class="row">
-                                                <div class="col-sm-6">
-                                                    <form id="form_26192" novalidate>
-                                                        <div class="form-group"><label>Precio</label><input class="form-control" id="input_585" /></div>
-                                                    </form>
-                                                </div>
-                                                <div class="col-sm-6">
-                                                    <div class="radio"><label><input type="radio" name="radioSetOne" value="option1" />Choice one</label></div>
-                                                </div>
-                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -62,16 +56,16 @@
                 </div>
             </div>
         </div>
-        <!-- bloc-14 END -->
-        <!-- bloc-15 -->
-        <div class="bloc bgc-white l-bloc" id="bloc-15">
+        <!-- bloc-15 END -->
+        <!-- bloc-16 -->
+        <div class="bloc bgc-white l-bloc" id="bloc-16">
             <div class="container">
                 <div class="row">
-                    <div class="col-sm-12"><a href="index.html" class="btn btn-wire btn-rd btn-xl wire-btn-light-salmon pull-right">+</a></div>
+                    
                 </div>
             </div>
         </div>
-        <!-- bloc-15 END -->
+        <!-- bloc-16 END -->
     </div>
     <!-- Main container END -->
 </body>

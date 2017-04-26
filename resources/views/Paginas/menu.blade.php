@@ -44,6 +44,16 @@
                         <div class="text-center"><a href="{{route('agregarPlatillo')}}" class="btn btn-lg btn-rd btn-wire wire-btn-light-salmon">Agregar Platillo</a></div>
                     </div>
                 </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="text-center"><a href="{{route('actualizarPlatillo')}}" class="btn btn-lg btn-rd btn-wire wire-btn-light-salmon">Modificar Platillo</a></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="text-center"><a href="{{route('eliminarPlatillo')}}" class="btn btn-lg btn-rd btn-wire wire-btn-light-salmon">Eliminar Platillo</a></div>
+                    </div>
+                </div>
             </div>
         </div>
         <!-- bloc-5 END -->
