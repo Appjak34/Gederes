@@ -24,5 +24,8 @@ Route::get('/menu/agregarPlatillo','IngredientsOption@addoption')->name('agregar
 Route::get('/menu/actualizarPlatillo', 'IngredientsOption@addoptionupdate')->name('actualizarPlatillo');
 Route::get('/menu/eliminarPlatillo', 'platilloController@showdelete')->name('eliminarPlatillo');
 Route::post('/insertado', 'platilloController@store')->name('insertado');
+Route::post('/ingredienteinsertado', 'Ingredientes@store')->name('ingredienteinsertado');
+Route::put('/ingredienteactualizado', 'Ingredientes@update')->name('ingredienteactualizado');
 Route::put('/actualizado', 'platilloController@update')->name('actualizado'); 
+Route::put('/Chef/listo', 'ordenController@updateorden')->name('listo');
 Route::delete('/eliminado', 'platilloController@delete')->name('eliminado');

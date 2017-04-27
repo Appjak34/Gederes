@@ -4,3 +4,4 @@
 			<option value="{{$platillo->nombrePlatillo}}">{{$platillo->nombrePlatillo}}</option>
 		@endforeach
 	</select>
+ 

@@ -33,16 +33,26 @@
     <div class="page-container">
         @include ('templates/navbar')
         <!-- bloc-12 -->
-        <form>
+        <form action="{{route('ingredienteinsertado')}}" method="post">
+        {{ csrf_field() }}
+            <table style="width:70%" align="center">
+                <tr>
+                    <td> <input type='text' name='nombreIngrediente' id='nombreIngrediente' placeholder="Inserta el ingrediente"> </td>
+                    <td> <input box-sizing="border-box" width="100%" type='text' name='cantidad' id='cantidad' placeholder="Inserta la cantidad"></td>
+                    <td> <button type="submit" class="btn btn-wire btn-rd btn-xl wire-btn-light-salmon">Insertar</button> </td>
+                <tr>
+            </table>
+        </form>
+        <form action="{{route('almacen')}}" method="post">
             <table style="width:70%" align="center">
                 <tr>
                     <th> Nombre </th>
                     <th> Cantidad </th>
-                    <th> Agregar </th>
                 <tr>
                 @include ('templates/ingrediente', ['ingredientes'=>$ingredientes])
             </table>
         </form>
+
         <!-- bloc-12 END -->
         <!-- ScrollToTop Button --><a class="bloc-button btn btn-d scrollToTop" onclick="scrollToTarget('1')"><span class="fa fa-chevron-up"></span></a>
         <!-- ScrollToTop Button END-->
